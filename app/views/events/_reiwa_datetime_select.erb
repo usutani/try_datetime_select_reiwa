@@ -1,0 +1,7 @@
+<%= form.datetime_select(datetime_at,
+                         start_year: Time.zone.now.year,
+                         year_format: ->(year) { "令和 #{year - 2018} 年" },
+                         month_format_string: "%<number>d 月",
+                         datetime_separator: '日 ',
+                         time_separator: '時')%>
+<span>分</span>

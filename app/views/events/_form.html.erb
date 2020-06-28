@@ -17,13 +17,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :start_at %>
-    <%= form.datetime_select :start_at %>
+    <%= form.label :start_at, '開始日時' %>
+    <%= render 'reiwa_datetime_select', form: form, datetime_at: :start_at %>
   </div>
 
   <div class="field">
-    <%= form.label :end_at %>
-    <%= form.datetime_select :end_at %>
+    <%= form.label :end_at, '終了日時' %>
+    <%= render 'reiwa_datetime_select', form: form, datetime_at: :end_at %>
   </div>
 
   <div class="actions">
